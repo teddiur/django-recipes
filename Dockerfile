@@ -5,7 +5,6 @@ ENV PYTHONUNBUFFERED 1
 
 COPY ./requirements.txt /requirements.txt
 RUN pip install -r /requirements.txt
-RUN export UID=${UID} && export GID=${GID}
 
 RUN mkdir /app
 WORKDIR /app
